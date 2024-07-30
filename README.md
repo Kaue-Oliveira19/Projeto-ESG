@@ -1,0 +1,1 @@
+Trabalho acadêmico semestral (APS - Atividades Práticas Supervisionadas), o professor coordenador escolheu como tema para APS a ESG (Environmental, Social, Governance), o site tem como caráter informativo, com objetivos de disseminar conhecimentos sobre a ESG e o uso da ESG nas cidades inteligentes e sustentáveis para a  população brasileira.
