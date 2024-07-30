@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <title>ESGING - Fórum</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS/Codigos.js"></script>
+    </head>
+
+    <body>
+    
+    <!--Menu vertical à esquerda, onde os usuários poderão se locomover pelas páginas do site-->
+    <nav>
+        <!--Logo do site, que fica à esquerda-->
+        <header>
+            <h1>ESGING</h1>
+        </header>
+        <ul>
+            <a href="Index.html"><li>Início</li></a>
+            <a href="artigos.html">
+                <li class="t">Artigos
+                <!--Submenu, que fica dentro de  "Artigos"-->
+                <div class="submenu">
+                    <ul>
+                        <li><a href = "esg1.html">ESG</a></li>
+                        <li><a href = "esg2.html">ESG: Métricas e Benefícios</a></li>
+                        <li><a href = "esg3.html">ESG no Brasil e no Mundo</a></li>
+                        <li><a href = "esg4.html">ESG, ODS e COP30</a></li>
+                        <li><a href = "usoESG.html">Uso da ESG em cidades inteligentes e sustentáveis</a></li>
+                    </ul>
+                </div>
+                </li>
+            </a>
+            <!--Área inferior do site, que contém acesso ao "Manual do Site"-->
+            <a href="quiz.html"><li>Quiz</li></a>
+            <a href="forum.html"><li>Fórum</li></a>
+        </ul>
+        <!--Área inferior do site, que contém acesso ao "Manual do Site"-->
+        <div id="rodape">
+            <footer>
+                <ul>
+                    <a href = "manualSite.html"><li>Manual do site</li></a>
+                </ul>
+
+                <p>ESGING 2024 | Todos os direitos reservados</p>
+            </footer>
+        </div>
+    </nav>
+
+    <!--Aréa de comentários do site-->
+    <div id = "caixa">
+        <div class = "texto">
+            <h1>Fórum</h1>
+        </div>
+
+        <hr>
+        
+        <!--Formulário para enviar comentários-->
+        <section>
+            <div class = "texto">
+                <form>
+                    <h2>Faça um comentário</h2>
+                    <div id = "nome">
+                        <label for = "nome">Nome:</label>
+                        <input type = "text" id = "nome" name = "nome" placeholder = "Digite o seu nome">
+                    </div>
+                    
+                    <div id = "sobrenome">
+                        <label for = "sobrenome">Sobrenome:</label>
+                        <input type = "text" id = "sobrenome" name = "sobrenome" placeholder = "Digite o seu sobrenome">
+                    </div>
+                    
+                    <div id = "email">
+                        <label for = "email">Email:</label>
+                        <input type = "email" id = "email" name = "email" placeholder = "Digite o seu email">
+                    </div>
+                    
+                    <div id="categoria">
+                        <label for="categoria">Categoria</label><br>
+                            <select name="" id="categoria">
+                                <option value="">Selecione o tipo de comentário</option>
+                                <option value="">Dúvida</option>
+                                <option value="">Observação</option>
+                                <option value="">Agradecimento</option>
+                                <option value="">Reclamação</option>
+                            </select>
+                    </div>
+                    
+                    <div id = "comentario">
+                        <label for = "comentario">Comentário:</label>
+                        <textarea id = "comentario" name = "comentario"  row = "3" colums = "63" placeholder = "Digite o seu comentário"></textarea>
+                    </div>
+
+                    <div id = "containerEnviar">
+                        <button id = "btnEnviar" onclick = "comEnviado()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--Aréa de comentários enviados-->
+        <section>
+            <h2>Comentários Enviados</h2><br>
+
+            <div class="respostaforum">
+
+                <div class="Res1">
+                    <p>Nome: Valter Antônio</p>
+                    <p>Categoria: Dúvida</p>
+                </div>
+                
+                <div class="Res2">
+                    <p>
+                        Olá, eu possuo uma dúvida, eu sou dono de uma empresa pequena, eu poderia aplicar as soluções de ESG dentro dela?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="respostaforum">
+
+                <div class="Res1">
+                    <p>Nome: Kauê Oliveira</p>
+                    <p>Categoria: Observação</p>
+                </div>
+
+                <div class="Res2">
+                    <p>
+                        A as torres eólicas podem ser adquiridas na Amazom, elas custam por volta de R$4000.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="respostaforum">
+
+                <div class="Res1">
+                    <p>Nome: Max Araújo</p>
+                    <p>Categoria: Agradecimento</p>
+                </div>
+
+                <div class="Res2">
+                    <p>
+                        Eu gostei muito do conteúdo que li aqui, vocês estão de parabéns! Também achei muito fácil de usar o site.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+    </div>
+    </body>
+</html>
